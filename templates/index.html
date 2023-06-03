@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Prediction</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("https://knowledgeone.ca/wp-content/uploads/2020/05/4c.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+</style>
+</style>
+</head>
+<body>
+  
+</head>
+    <h1 align="center"> Sales Prediction Homepage </h1>
+    <form method="GET" action ="/prediction_charges">
+    
+            <label>Item_Weight:</label>
+            <input type = "text" name = "Item_Weight">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Item_Fat_Content:</label>
+            <select name = "Item_Fat_Content">
+
+                <option value = 'Low Fat'>'Low Fat'</option>
+                <option value = 'Regular'>'Regular'</option>
+                <option value = 'low fat'>'Low Fat'</option>
+                <option value = 'LF'>'Low Fat'</option>
+
+            </select>
+
+            <br>
+            <br>
+
+
+            <label>Item_Visibility:</label>
+            <input type = "text" name = "Item_Visibility">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Item_MRP:</label>
+            <input type = "text" name = "Item_MRP">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Outlet_Establishment_Year:</label>
+            <input type = "text" name = "Outlet_Establishment_Year">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Outlet_Size:</label>
+            <select name = "Outlet_Size">
+
+                <option value = 'Medium'>'Medium'</option>
+                <option value = 'High'>'High'</option>
+                <option value = 'Small'>'Small'</option>
+
+            </select>
+
+             <br>
+             <br>
+
+            <label>Outlet_Location_Type:</label>
+            <select name = "Outlet_Location_Type">
+
+                <option value = 'Tier 1'>'Tier 1'</option>
+                <option value = 'Tier 3'>'Tier 3'</option>
+                <option value = 'Tier 2'>'Tier 2'</option>
+
+            </select>
+
+            <br>
+            <br>
+
+
+            <label>Outlet_Type:</label>
+            <select name = "Outlet_Type">
+
+                <option value = 'Supermarket Type1'>'Supermarket Type1'</option>
+                <option value = 'Supermarket Type2'>'Supermarket Type2'</option>
+                <option value = 'Supermarket Type3'>'Supermarket Type3'</option>
+                <option value = 'Grocery Store'>'Grocery Store'</option>
+
+            </select>
+
+            <br>
+            <br>
+    
+   
+            <label> Item_Type: </label>
+            <label for = "Item_Type">
+            <select name = "Item_Type" id="Item_Type">
+                    <option value = "Dairy">Dairy</option>
+                    <option value = "Soft Drinks">Soft Drinks</option>
+                    <option value = "Meat">Meat</option>
+                    <option value = "Fruits and Vegetables">Fruits and Vegetables</option>
+                    <option value = "Household">Household</option>
+                    <option value = "Baking Goods">Baking Goods</option>
+                    <option value = "Snack Foods">Snack Foods</option>
+                    <option value = "Frozen Foods">Frozen Foods</option>
+                    <option value = "Breakfast">Breakfast</option>
+                    <option value = "Health and Hygiene">Health and Hygiene</option>
+                    <option value = "Hard Drinks">Hard Drinks</option>
+                    <option value = "Canned">Canned</option>
+                    <option value = "Breads">Breads</option>
+                    <option value = "Starchy Foods">Starchy Foods</option>
+                    <option value = "Others">Others</option>
+                    <option value = "Seafood">Seafood</option>
+            </select>
+
+            <br>
+            <br>
+
+
+            <br>
+            <input type = "submit" value = "SUBMIT">
+
+            <br>
+            <p>Your Sales Charges will be <b>{{ prediction }} /- Rs.</b> Only. </p>
+    
+        </form>
+</body>
+</html>
